@@ -89,6 +89,11 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                @php
+
+                $p = \App\SBlog\Core\BlogApp::get_instance()->getProperty('smtp_host');
+                dd($p);
+                @endphp
             </div>
         </div>
     </body>
